@@ -1,0 +1,168 @@
+/* Custom RevealJS Theme for Financial Presentation */
+
+:root {
+  --r-main-font-size: 36px;
+  --r-heading-font: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --r-main-font: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+/* Title slide styling */
+.reveal h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.reveal h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #42affa;
+}
+
+/* Email link styling */
+.reveal a {
+  color: #42affa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.reveal a:hover {
+  color: #00ff00;
+  text-decoration: underline;
+}
+
+/* Table styling for financial data */
+.reveal table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.reveal table th {
+  background-color: #1a73e8;
+  color: white;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.reveal table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #444;
+}
+
+.reveal table tr:hover {
+  background-color: rgba(66, 175, 250, 0.1);
+}
+
+/* Code block styling */
+.reveal pre {
+  margin: 20px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.reveal code {
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* Fragment animations */
+.reveal .fragment.highlight-green {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.reveal .fragment.highlight-green.visible {
+  color: #00ff00;
+  font-weight: 600;
+}
+
+.reveal .fragment.highlight-blue {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.reveal .fragment.highlight-blue.visible {
+  color: #42affa;
+  font-weight: 600;
+}
+
+.reveal .fragment.highlight-red {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.reveal .fragment.highlight-red.visible {
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+/* Math equations styling */
+.reveal .katex {
+  font-size: 1.1em;
+}
+
+.reveal .katex-display {
+  margin: 20px 0;
+}
+
+/* Speaker notes indicator */
+.reveal aside.notes {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  :root {
+    --r-main-font-size: 28px;
+  }
+
+  .reveal h1 {
+    font-size: 2em;
+  }
+
+  .reveal h2 {
+    font-size: 1.5em;
+  }
+
+  .reveal table {
+    font-size: 0.7em;
+  }
+}
+
+/* Custom background for slides */
+.reveal .slides section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+/* Progress bar customization */
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  height: 4px;
+}
+
+.reveal .progress span {
+  background: #42affa;
+}
+
+/* Controls styling */
+.reveal .controls {
+  color: #42affa;
+}
+
+.reveal .controls button:hover {
+  color: #00ff00;
+}
+
+/* Stacked images styling */
+.reveal .r-stack > * {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4 2025 Earnings Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Title Slide -->
+        <section>
+          <h1>Q4 2025 Earnings Report</h1>
+          <h3>Financial Performance Overview</h3>
+          <p>
+            <small>Prepared by: <a href="mailto:23f3002709@ds.study.iitm.ac.in">23f3002709@ds.study.iitm.ac.in</a></small>
+          </p>
+          <aside class="notes">
+            Welcome stakeholders to the Q4 2025 earnings presentation.
+            This presentation covers our financial performance, key metrics,
+            and strategic outlook for the coming quarter.
+          </aside>
+        </section>
+
+        <!-- Markdown Slide: Executive Summary -->
+        <section data-markdown>
+          <textarea data-template>
+            ## Executive Summary
+
+            ### Key Highlights Q4 2025
+
+            - **Revenue Growth**: 18.5% YoY increase
+            - **Net Income**: $245M (up 22% from Q4 2024)
+            - **EPS**: $3.42 per share
+            - **Customer Acquisition**: 150K new customers
+            - **Market Cap**: Reached $5.2B milestone
+
+            ---
+
+            ### Strategic Initiatives
+
+            * Digital transformation completed
+            * New product launches in 3 markets
+            * Cost optimization savings: $35M
+          </textarea>
+          <aside class="notes">
+            Our Q4 performance exceeded expectations across all key metrics.
+            The digital transformation initiative has significantly improved operational efficiency.
+            We've successfully expanded into three new markets as planned.
+          </aside>
+        </section>
+
+        <!-- Animated Financial Metrics -->
+        <section>
+          <h2>Financial Performance Metrics</h2>
+          <table style="width: 100%; font-size: 0.8em;">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Q4 2024</th>
+                <th>Q4 2025</th>
+                <th>Change</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="fragment fade-up">
+                <td>Revenue</td>
+                <td>$820M</td>
+                <td>$972M</td>
+                <td style="color: #00ff00;">+18.5%</td>
+              </tr>
+              <tr class="fragment fade-up">
+                <td>Operating Income</td>
+                <td>$195M</td>
+                <td>$245M</td>
+                <td style="color: #00ff00;">+25.6%</td>
+              </tr>
+              <tr class="fragment fade-up">
+                <td>Net Margin</td>
+                <td>23.8%</td>
+                <td>25.2%</td>
+                <td style="color: #00ff00;">+1.4pp</td>
+              </tr>
+              <tr class="fragment fade-up">
+                <td>Cash Flow</td>
+                <td>$312M</td>
+                <td>$387M</td>
+                <td style="color: #00ff00;">+24.0%</td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="notes">
+            Walk through each metric showing quarter-over-quarter improvements.
+            Highlight the strong margin expansion driven by operational efficiency.
+            Emphasize the robust cash flow generation supporting future investments.
+          </aside>
+        </section>
+
+        <!-- Code Sample: Revenue Calculation Model -->
+        <section>
+          <h2>Revenue Calculation Model</h2>
+          <pre><code class="python" data-line-numbers="1-3|5-7|9-11|13-15">
+# Financial metrics calculation
+import pandas as pd
+import numpy as np
+
+# Load quarterly data
+df = pd.read_csv('quarterly_data.csv')
+revenue = df['revenue'].sum()
+
+# Calculate growth metrics
+yoy_growth = (revenue - prev_revenue) / prev_revenue
+margin = operating_income / revenue
+
+# Generate forecasts
+forecast = revenue * (1 + np.mean(growth_rates))
+confidence_interval = np.std(growth_rates) * 1.96
+          </code></pre>
+          <aside class="notes">
+            This Python code demonstrates our revenue calculation methodology.
+            Line 1-3: Import necessary data science libraries.
+            Line 5-7: Load and aggregate quarterly revenue data.
+            Line 9-11: Calculate year-over-year growth and margins.
+            Line 13-15: Generate forecasts with statistical confidence intervals.
+          </aside>
+        </section>
+
+        <!-- Mathematical Formulas -->
+        <section>
+          <h2>Financial Ratios & Formulas</h2>
+          <div class="fragment fade-in">
+            <h3>Return on Equity (ROE)</h3>
+            <p>\[ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}} = \frac{245M}{1,240M} = 19.76\%\]</p>
+          </div>
+          <div class="fragment fade-in">
+            <h3>Earnings Per Share (EPS)</h3>
+            <p>\[EPS = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average Shares}} = \frac{245M - 0}{71.6M} = \$3.42\]</p>
+          </div>
+          <div class="fragment fade-in">
+            <h3>Price-to-Earnings Ratio (P/E)</h3>
+            <p>\[P/E = \frac{\text{Market Price per Share}}{\text{EPS}} = \frac{\$72.50}{\$3.42} = 21.2\]</p>
+          </div>
+          <aside class="notes">
+            Key financial ratios demonstrate strong performance:
+            ROE of 19.76% shows efficient use of shareholder capital.
+            EPS of $3.42 represents strong per-share profitability.
+            P/E ratio of 21.2 indicates reasonable market valuation.
+          </aside>
+        </section>
+
+        <!-- Advanced Math: Portfolio Optimization -->
+        <section>
+          <h2>Portfolio Risk Analysis</h2>
+          <p class="fragment">Using Modern Portfolio Theory to optimize our investment allocation:</p>
+          <div class="fragment">
+            <p>\[\mu_p = \sum_{i=1}^{n} w_i \mu_i\]</p>
+            <p style="font-size: 0.7em;">Expected portfolio return</p>
+          </div>
+          <div class="fragment">
+            <p>\[\sigma_p^2 = \sum_{i=1}^{n}\sum_{j=1}^{n} w_i w_j \sigma_i \sigma_j \rho_{ij}\]</p>
+            <p style="font-size: 0.7em;">Portfolio variance with correlation</p>
+          </div>
+          <div class="fragment">
+            <p>\[\text{Sharpe Ratio} = \frac{\mu_p - r_f}{\sigma_p} = \frac{0.124 - 0.045}{0.082} = 0.96\]</p>
+            <p style="font-size: 0.7em;">Risk-adjusted return measure</p>
+          </div>
+          <aside class="notes">
+            Our portfolio optimization uses Modern Portfolio Theory.
+            Expected return is weighted average of individual asset returns.
+            Portfolio variance accounts for correlations between assets.
+            Sharpe Ratio of 0.96 indicates good risk-adjusted performance.
+          </aside>
+        </section>
+
+        <!-- Code: Risk Calculation -->
+        <section>
+          <h2>Risk Metrics Implementation</h2>
+          <pre><code class="javascript" data-line-numbers="1-2|4-9|11-16|18-20">
+// Calculate Value at Risk (VaR)
+const calculateVaR = (returns, confidence = 0.95) => {
+
+  // Sort returns in ascending order
+  const sortedReturns = returns.sort((a, b) => a - b);
+
+  // Find the percentile index
+  const index = Math.floor((1 - confidence) * returns.length);
+  const var95 = sortedReturns[index];
+
+  // Calculate Conditional VaR (Expected Shortfall)
+  const cvar = sortedReturns
+    .slice(0, index)
+    .reduce((sum, val) => sum + val, 0) / index;
+
+  return { var95, cvar };
+};
+
+// Example: Portfolio of $100M
+// VaR(95%) = $4.2M maximum expected loss
+          </code></pre>
+          <aside class="notes">
+            This JavaScript implementation calculates Value at Risk.
+            VaR estimates the maximum expected loss at a given confidence level.
+            CVaR (Conditional VaR) shows the expected loss beyond VaR threshold.
+            Our current portfolio VaR(95%) is $4.2M on $100M portfolio.
+          </aside>
+        </section>
+
+        <!-- Fragment Animation: Growth Drivers -->
+        <section>
+          <h2>Revenue Growth Drivers</h2>
+          <div class="r-stack">
+            <img class="fragment fade-out" data-fragment-index="0" src="https://via.placeholder.com/600x400/1a1a1a/00ff00?text=Q1:+Product+Launch" alt="Q1" />
+            <img class="fragment current-visible" data-fragment-index="0" src="https://via.placeholder.com/600x400/1a1a1a/00aaff?text=Q2:+Market+Expansion" alt="Q2" />
+            <img class="fragment current-visible" data-fragment-index="1" src="https://via.placeholder.com/600x400/1a1a1a/ffaa00?text=Q3:+Partnership+Deals" alt="Q3" />
+            <img class="fragment" data-fragment-index="2" src="https://via.placeholder.com/600x400/1a1a1a/ff00ff?text=Q4:+Digital+Transformation" alt="Q4" />
+          </div>
+          <aside class="notes">
+            Walk through the four key growth drivers throughout the year:
+            Q1: Successful product launches in core markets.
+            Q2: Geographic expansion into Asia-Pacific region.
+            Q3: Strategic partnerships with major technology providers.
+            Q4: Completion of digital transformation initiative.
+          </aside>
+        </section>
+
+        <!-- Multiple Fragments -->
+        <section>
+          <h2>Strategic Outlook 2026</h2>
+          <ul>
+            <li class="fragment highlight-green">Continue digital transformation initiatives</li>
+            <li class="fragment highlight-blue">Expand into 5 new international markets</li>
+            <li class="fragment highlight-red">Launch AI-powered financial products</li>
+            <li class="fragment fade-up">Increase R&D investment by 30%</li>
+            <li class="fragment fade-up">Achieve carbon-neutral operations</li>
+            <li class="fragment grow">Target: $1.2B revenue (25% growth)</li>
+          </ul>
+          <aside class="notes">
+            Our 2026 strategic priorities focus on growth and sustainability.
+            Digital transformation continues to be a key differentiator.
+            International expansion will drive revenue diversification.
+            AI-powered products represent our innovation commitment.
+            Sustainability goals align with stakeholder expectations.
+          </aside>
+        </section>
+
+        <!-- SQL Query Example -->
+        <section>
+          <h2>Data Analytics Query</h2>
+          <pre><code class="sql" data-line-numbers="1-3|4-8|9-11|12-13">
+-- Quarterly revenue analysis by product segment
+SELECT
+    product_segment,
+    SUM(revenue) as total_revenue,
+    AVG(profit_margin) as avg_margin,
+    COUNT(DISTINCT customer_id) as customer_count,
+    SUM(revenue) / SUM(SUM(revenue)) OVER () * 100 as revenue_share
+FROM sales_data
+WHERE quarter = 'Q4'
+  AND year = 2025
+GROUP BY product_segment
+ORDER BY total_revenue DESC;
+          </code></pre>
+          <aside class="notes">
+            This SQL query analyzes revenue distribution across product segments.
+            We aggregate revenue, profit margins, and customer counts.
+            The window function calculates each segment's revenue share.
+            This analysis helps identify high-performing segments for investment.
+          </aside>
+        </section>
+
+        <!-- Contact & Questions -->
+        <section>
+          <h2>Thank You!</h2>
+          <h3>Questions & Discussion</h3>
+          <p style="margin-top: 50px;">
+            <strong>Contact Information:</strong><br>
+            Email: <a href="mailto:23f3002709@ds.study.iitm.ac.in">23f3002709@ds.study.iitm.ac.in</a>
+          </p>
+          <p style="margin-top: 30px; font-size: 0.8em;">
+            Press <strong>S</strong> for speaker notes<br>
+            Press <strong>F</strong> for fullscreen<br>
+            Press <strong>O</strong> for overview
+          </p>
+          <aside class="notes">
+            Thank stakeholders for their time and attention.
+            Open the floor for questions and detailed discussions.
+            Be prepared to dive deeper into any specific metrics or initiatives.
+            Remind participants about the detailed appendix materials available.
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        width: 1280,
+        height: 720,
+        margin: 0.04,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide',
+        transitionSpeed: 'default',
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+      });
+    </script>
+  </body>
+</html>
